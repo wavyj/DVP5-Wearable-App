@@ -1,0 +1,636 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D047916D1EC8251700145C36 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D047916C1EC8251700145C36 /* MapKit.framework */; };
+		D047916F1EC8296400145C36 /* Trail.swift in Sources */ = {isa = PBXBuildFile; fileRef = D047916E1EC8296400145C36 /* Trail.swift */; };
+		D04791701EC8296400145C36 /* Trail.swift in Sources */ = {isa = PBXBuildFile; fileRef = D047916E1EC8296400145C36 /* Trail.swift */; };
+		D04791721EC830CB00145C36 /* TrailRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04791711EC830CB00145C36 /* TrailRowController.swift */; };
+		D07756B01ECB8F9D0088652A /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07756AF1ECB8F9D0088652A /* DetailController.swift */; };
+		D07756B21ECB9CF60088652A /* FavoritesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07756B11ECB9CF60088652A /* FavoritesController.swift */; };
+		D0804CAC1EC2A92E00B3086C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0804CAB1EC2A92E00B3086C /* AppDelegate.swift */; };
+		D0804CAE1EC2A92E00B3086C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0804CAD1EC2A92E00B3086C /* ViewController.swift */; };
+		D0804CB11EC2A92E00B3086C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0804CAF1EC2A92E00B3086C /* Main.storyboard */; };
+		D0804CB31EC2A92E00B3086C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0804CB21EC2A92E00B3086C /* Assets.xcassets */; };
+		D0804CB61EC2A92E00B3086C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0804CB41EC2A92E00B3086C /* LaunchScreen.storyboard */; };
+		D0804CBB1EC2A92E00B3086C /* ColemanJustin_WearableProject WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D0804CBA1EC2A92E00B3086C /* ColemanJustin_WearableProject WatchKit App.app */; };
+		D0804CC11EC2A92E00B3086C /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0804CBF1EC2A92E00B3086C /* Interface.storyboard */; };
+		D0804CC31EC2A92E00B3086C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0804CC21EC2A92E00B3086C /* Assets.xcassets */; };
+		D0804CCA1EC2A92E00B3086C /* ColemanJustin_WearableProject WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D0804CC91EC2A92E00B3086C /* ColemanJustin_WearableProject WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D0804CCF1EC2A92E00B3086C /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0804CCE1EC2A92E00B3086C /* InterfaceController.swift */; };
+		D0804CD11EC2A92E00B3086C /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0804CD01EC2A92E00B3086C /* ExtensionDelegate.swift */; };
+		D0804CD31EC2A92E00B3086C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0804CD21EC2A92E00B3086C /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D0804CBC1EC2A92E00B3086C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0804CA01EC2A92E00B3086C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0804CB91EC2A92E00B3086C;
+			remoteInfo = "ColemanJustin_WearableProject WatchKit App";
+		};
+		D0804CCB1EC2A92E00B3086C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0804CA01EC2A92E00B3086C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0804CC81EC2A92E00B3086C;
+			remoteInfo = "ColemanJustin_WearableProject WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D0804CDA1EC2A92F00B3086C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D0804CCA1EC2A92E00B3086C /* ColemanJustin_WearableProject WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0804CDE1EC2A92F00B3086C /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				D0804CBB1EC2A92E00B3086C /* ColemanJustin_WearableProject WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D047916C1EC8251700145C36 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		D047916E1EC8296400145C36 /* Trail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trail.swift; sourceTree = "<group>"; };
+		D04791711EC830CB00145C36 /* TrailRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrailRowController.swift; sourceTree = "<group>"; };
+		D05BC84B1ECBDEED00C93760 /* ColemanJustin_WearableProject.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ColemanJustin_WearableProject.entitlements; sourceTree = "<group>"; };
+		D05BC84C1ECBDF6800C93760 /* ColemanJustin_WearableProject WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "ColemanJustin_WearableProject WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		D07756AF1ECB8F9D0088652A /* DetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
+		D07756B11ECB9CF60088652A /* FavoritesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FavoritesController.swift; path = "../ColemanJustin_WearableProject WatchKit App/FavoritesController.swift"; sourceTree = "<group>"; };
+		D0804CA81EC2A92E00B3086C /* ColemanJustin_WearableProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColemanJustin_WearableProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0804CAB1EC2A92E00B3086C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D0804CAD1EC2A92E00B3086C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D0804CB01EC2A92E00B3086C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D0804CB21EC2A92E00B3086C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D0804CB51EC2A92E00B3086C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D0804CB71EC2A92E00B3086C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0804CBA1EC2A92E00B3086C /* ColemanJustin_WearableProject WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ColemanJustin_WearableProject WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0804CC01EC2A92E00B3086C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		D0804CC21EC2A92E00B3086C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D0804CC41EC2A92E00B3086C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0804CC91EC2A92E00B3086C /* ColemanJustin_WearableProject WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "ColemanJustin_WearableProject WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0804CCE1EC2A92E00B3086C /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		D0804CD01EC2A92E00B3086C /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		D0804CD21EC2A92E00B3086C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D0804CD41EC2A92E00B3086C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D0804CA51EC2A92E00B3086C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D047916D1EC8251700145C36 /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0804CC61EC2A92E00B3086C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D0804C9F1EC2A92E00B3086C = {
+			isa = PBXGroup;
+			children = (
+				D0804CAA1EC2A92E00B3086C /* ColemanJustin_WearableProject */,
+				D0804CBE1EC2A92E00B3086C /* ColemanJustin_WearableProject WatchKit App */,
+				D0804CCD1EC2A92E00B3086C /* ColemanJustin_WearableProject WatchKit Extension */,
+				D0804CA91EC2A92E00B3086C /* Products */,
+				D0804CE41EC2B36000B3086C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D0804CA91EC2A92E00B3086C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D0804CA81EC2A92E00B3086C /* ColemanJustin_WearableProject.app */,
+				D0804CBA1EC2A92E00B3086C /* ColemanJustin_WearableProject WatchKit App.app */,
+				D0804CC91EC2A92E00B3086C /* ColemanJustin_WearableProject WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D0804CAA1EC2A92E00B3086C /* ColemanJustin_WearableProject */ = {
+			isa = PBXGroup;
+			children = (
+				D05BC84B1ECBDEED00C93760 /* ColemanJustin_WearableProject.entitlements */,
+				D0804CAB1EC2A92E00B3086C /* AppDelegate.swift */,
+				D047916E1EC8296400145C36 /* Trail.swift */,
+				D0804CAD1EC2A92E00B3086C /* ViewController.swift */,
+				D0804CAF1EC2A92E00B3086C /* Main.storyboard */,
+				D0804CB21EC2A92E00B3086C /* Assets.xcassets */,
+				D0804CB41EC2A92E00B3086C /* LaunchScreen.storyboard */,
+				D0804CB71EC2A92E00B3086C /* Info.plist */,
+			);
+			path = ColemanJustin_WearableProject;
+			sourceTree = "<group>";
+		};
+		D0804CBE1EC2A92E00B3086C /* ColemanJustin_WearableProject WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				D0804CBF1EC2A92E00B3086C /* Interface.storyboard */,
+				D0804CC21EC2A92E00B3086C /* Assets.xcassets */,
+				D0804CC41EC2A92E00B3086C /* Info.plist */,
+			);
+			path = "ColemanJustin_WearableProject WatchKit App";
+			sourceTree = "<group>";
+		};
+		D0804CCD1EC2A92E00B3086C /* ColemanJustin_WearableProject WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D05BC84C1ECBDF6800C93760 /* ColemanJustin_WearableProject WatchKit Extension.entitlements */,
+				D0804CCE1EC2A92E00B3086C /* InterfaceController.swift */,
+				D07756AF1ECB8F9D0088652A /* DetailController.swift */,
+				D07756B11ECB9CF60088652A /* FavoritesController.swift */,
+				D04791711EC830CB00145C36 /* TrailRowController.swift */,
+				D0804CD01EC2A92E00B3086C /* ExtensionDelegate.swift */,
+				D0804CD21EC2A92E00B3086C /* Assets.xcassets */,
+				D0804CD41EC2A92E00B3086C /* Info.plist */,
+			);
+			path = "ColemanJustin_WearableProject WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		D0804CE41EC2B36000B3086C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D047916C1EC8251700145C36 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D0804CA71EC2A92E00B3086C /* ColemanJustin_WearableProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0804CDF1EC2A92F00B3086C /* Build configuration list for PBXNativeTarget "ColemanJustin_WearableProject" */;
+			buildPhases = (
+				D0804CA41EC2A92E00B3086C /* Sources */,
+				D0804CA51EC2A92E00B3086C /* Frameworks */,
+				D0804CA61EC2A92E00B3086C /* Resources */,
+				D0804CDE1EC2A92F00B3086C /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D0804CBD1EC2A92E00B3086C /* PBXTargetDependency */,
+			);
+			name = ColemanJustin_WearableProject;
+			productName = ColemanJustin_WearableProject;
+			productReference = D0804CA81EC2A92E00B3086C /* ColemanJustin_WearableProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D0804CB91EC2A92E00B3086C /* ColemanJustin_WearableProject WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0804CDB1EC2A92F00B3086C /* Build configuration list for PBXNativeTarget "ColemanJustin_WearableProject WatchKit App" */;
+			buildPhases = (
+				D0804CB81EC2A92E00B3086C /* Resources */,
+				D0804CDA1EC2A92F00B3086C /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D0804CCC1EC2A92E00B3086C /* PBXTargetDependency */,
+			);
+			name = "ColemanJustin_WearableProject WatchKit App";
+			productName = "ColemanJustin_WearableProject WatchKit App";
+			productReference = D0804CBA1EC2A92E00B3086C /* ColemanJustin_WearableProject WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		D0804CC81EC2A92E00B3086C /* ColemanJustin_WearableProject WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0804CD71EC2A92F00B3086C /* Build configuration list for PBXNativeTarget "ColemanJustin_WearableProject WatchKit Extension" */;
+			buildPhases = (
+				D0804CC51EC2A92E00B3086C /* Sources */,
+				D0804CC61EC2A92E00B3086C /* Frameworks */,
+				D0804CC71EC2A92E00B3086C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ColemanJustin_WearableProject WatchKit Extension";
+			productName = "ColemanJustin_WearableProject WatchKit Extension";
+			productReference = D0804CC91EC2A92E00B3086C /* ColemanJustin_WearableProject WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D0804CA01EC2A92E00B3086C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Justin Coleman";
+				TargetAttributes = {
+					D0804CA71EC2A92E00B3086C = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 2S5RP4T6CK;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					D0804CB91EC2A92E00B3086C = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+					D0804CC81EC2A92E00B3086C = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 2S5RP4T6CK;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = D0804CA31EC2A92E00B3086C /* Build configuration list for PBXProject "ColemanJustin_WearableProject" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D0804C9F1EC2A92E00B3086C;
+			productRefGroup = D0804CA91EC2A92E00B3086C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D0804CA71EC2A92E00B3086C /* ColemanJustin_WearableProject */,
+				D0804CB91EC2A92E00B3086C /* ColemanJustin_WearableProject WatchKit App */,
+				D0804CC81EC2A92E00B3086C /* ColemanJustin_WearableProject WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D0804CA61EC2A92E00B3086C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0804CB61EC2A92E00B3086C /* LaunchScreen.storyboard in Resources */,
+				D0804CB31EC2A92E00B3086C /* Assets.xcassets in Resources */,
+				D0804CB11EC2A92E00B3086C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0804CB81EC2A92E00B3086C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0804CC31EC2A92E00B3086C /* Assets.xcassets in Resources */,
+				D0804CC11EC2A92E00B3086C /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0804CC71EC2A92E00B3086C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0804CD31EC2A92E00B3086C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D0804CA41EC2A92E00B3086C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0804CAE1EC2A92E00B3086C /* ViewController.swift in Sources */,
+				D047916F1EC8296400145C36 /* Trail.swift in Sources */,
+				D0804CAC1EC2A92E00B3086C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0804CC51EC2A92E00B3086C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0804CD11EC2A92E00B3086C /* ExtensionDelegate.swift in Sources */,
+				D04791701EC8296400145C36 /* Trail.swift in Sources */,
+				D0804CCF1EC2A92E00B3086C /* InterfaceController.swift in Sources */,
+				D07756B01ECB8F9D0088652A /* DetailController.swift in Sources */,
+				D04791721EC830CB00145C36 /* TrailRowController.swift in Sources */,
+				D07756B21ECB9CF60088652A /* FavoritesController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D0804CBD1EC2A92E00B3086C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0804CB91EC2A92E00B3086C /* ColemanJustin_WearableProject WatchKit App */;
+			targetProxy = D0804CBC1EC2A92E00B3086C /* PBXContainerItemProxy */;
+		};
+		D0804CCC1EC2A92E00B3086C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0804CC81EC2A92E00B3086C /* ColemanJustin_WearableProject WatchKit Extension */;
+			targetProxy = D0804CCB1EC2A92E00B3086C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D0804CAF1EC2A92E00B3086C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0804CB01EC2A92E00B3086C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D0804CB41EC2A92E00B3086C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0804CB51EC2A92E00B3086C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D0804CBF1EC2A92E00B3086C /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0804CC01EC2A92E00B3086C /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D0804CD51EC2A92F00B3086C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D0804CD61EC2A92F00B3086C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D0804CD81EC2A92F00B3086C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "ColemanJustin_WearableProject WatchKit Extension/ColemanJustin_WearableProject WatchKit Extension.entitlements";
+				DEVELOPMENT_TEAM = 2S5RP4T6CK;
+				INFOPLIST_FILE = "ColemanJustin_WearableProject WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ColemanJustin.ColemanJustin-WearableProject.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Debug;
+		};
+		D0804CD91EC2A92F00B3086C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "ColemanJustin_WearableProject WatchKit Extension/ColemanJustin_WearableProject WatchKit Extension.entitlements";
+				DEVELOPMENT_TEAM = 2S5RP4T6CK;
+				INFOPLIST_FILE = "ColemanJustin_WearableProject WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ColemanJustin.ColemanJustin-WearableProject.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Release;
+		};
+		D0804CDC1EC2A92F00B3086C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = ColemanJustin_WearableProject_WatchKit_Extension;
+				INFOPLIST_FILE = "ColemanJustin_WearableProject WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "ColemanJustin.ColemanJustin-WearableProject.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Debug;
+		};
+		D0804CDD1EC2A92F00B3086C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = ColemanJustin_WearableProject_WatchKit_Extension;
+				INFOPLIST_FILE = "ColemanJustin_WearableProject WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "ColemanJustin.ColemanJustin-WearableProject.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Release;
+		};
+		D0804CE01EC2A92F00B3086C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ColemanJustin_WearableProject/ColemanJustin_WearableProject.entitlements;
+				DEVELOPMENT_TEAM = 2S5RP4T6CK;
+				INFOPLIST_FILE = ColemanJustin_WearableProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ColemanJustin.ColemanJustin-WearableProject";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D0804CE11EC2A92F00B3086C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ColemanJustin_WearableProject/ColemanJustin_WearableProject.entitlements;
+				DEVELOPMENT_TEAM = 2S5RP4T6CK;
+				INFOPLIST_FILE = ColemanJustin_WearableProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ColemanJustin.ColemanJustin-WearableProject";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D0804CA31EC2A92E00B3086C /* Build configuration list for PBXProject "ColemanJustin_WearableProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0804CD51EC2A92F00B3086C /* Debug */,
+				D0804CD61EC2A92F00B3086C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0804CD71EC2A92F00B3086C /* Build configuration list for PBXNativeTarget "ColemanJustin_WearableProject WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0804CD81EC2A92F00B3086C /* Debug */,
+				D0804CD91EC2A92F00B3086C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0804CDB1EC2A92F00B3086C /* Build configuration list for PBXNativeTarget "ColemanJustin_WearableProject WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0804CDC1EC2A92F00B3086C /* Debug */,
+				D0804CDD1EC2A92F00B3086C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0804CDF1EC2A92F00B3086C /* Build configuration list for PBXNativeTarget "ColemanJustin_WearableProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0804CE01EC2A92F00B3086C /* Debug */,
+				D0804CE11EC2A92F00B3086C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D0804CA01EC2A92E00B3086C /* Project object */;
+}

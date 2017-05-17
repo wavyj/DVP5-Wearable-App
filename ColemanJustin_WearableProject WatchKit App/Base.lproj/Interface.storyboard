@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch42" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="12029"/>
+    </dependencies>
+    <scenes>
+        <!--Trails-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="home" title="Trails" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="ColemanJustin_WearableProject_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label alignment="center" hidden="YES" text="Nearby Trails" id="UJe-ES-GaP">
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                        <table alignment="left" id="SJH-LL-fWw">
+                            <items>
+                                <tableRow identifier="trailRow" id="8sM-GX-2WY" customClass="TrailRowController" customModule="ColemanJustin_WearableProject_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="vjP-bp-gHj">
+                                        <items>
+                                            <label width="1" alignment="left" text="Name" textAlignment="center" numberOfLines="2" minimumScaleFactor="0.80000000000000004" id="vXD-2A-nre">
+                                                <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                                            </label>
+                                            <label width="1" alignment="left" alpha="0.59999999999999998" text="Distance" textAlignment="center" id="1Up-Dm-P2w"/>
+                                        </items>
+                                        <connections>
+                                            <segue destination="pVn-cx-QSE" kind="modal" identifier="toDetail" id="Rpa-yU-IR2"/>
+                                        </connections>
+                                    </group>
+                                    <connections>
+                                        <outlet property="distanceLabel" destination="1Up-Dm-P2w" id="e3X-4c-q2N"/>
+                                        <outlet property="nameLabel" destination="vXD-2A-nre" id="Dah-zK-g1t"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="SJH-LL-fWw" id="MCc-bB-xao"/>
+                        <outlet property="trailsLabel" destination="UJe-ES-GaP" id="ZMQ-m5-B6G"/>
+                        <segue destination="5Qi-sw-JLA" kind="relationship" relationship="nextPage" id="1MS-td-R0Z"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="55" y="39"/>
+        </scene>
+        <!--Favorites-->
+        <scene sceneID="Oh1-Q5-iUl">
+            <objects>
+                <controller identifier="Favorites" title="Favorites" id="5Qi-sw-JLA" customClass="FavoritesController" customModule="ColemanJustin_WearableProject_WatchKit_Extension"/>
+            </objects>
+            <point key="canvasLocation" x="309" y="39"/>
+        </scene>
+        <!--Detail-->
+        <scene sceneID="Omz-d7-DT3">
+            <objects>
+                <controller identifier="Detail" id="pVn-cx-QSE" customClass="DetailController" customModule="ColemanJustin_WearableProject_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" id="o1Q-T6-QgR">
+                            <items>
+                                <label width="1" alignment="left" text="Name" textAlignment="center" numberOfLines="2" minimumScaleFactor="0.80000000000000004" id="ffY-e0-bYW">
+                                    <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                </label>
+                                <label width="1" alignment="left" alpha="0.59999999999999998" text="Distance" textAlignment="center" id="D2o-7w-gG1"/>
+                            </items>
+                        </group>
+                        <button alignment="center" verticalAlignment="center" backgroundImage="heart-outline" id="oi7-Qg-hbz">
+                            <connections>
+                                <action selector="heartTappedWithSender:" destination="pVn-cx-QSE" id="blA-Jb-TRb"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Start Trail" id="FPf-So-Ins"/>
+                    </items>
+                    <connections>
+                        <outlet property="distanceLabel" destination="D2o-7w-gG1" id="maA-aB-4Oq"/>
+                        <outlet property="faveBtn" destination="oi7-Qg-hbz" id="jK6-WN-sbf"/>
+                        <outlet property="nameLabel" destination="ffY-e0-bYW" id="0qQ-Gq-PxH"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="55" y="335"/>
+        </scene>
+    </scenes>
+</document>
