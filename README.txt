@@ -9,6 +9,9 @@ Weekly Requirements:
 - Details Controller displaying the selected Trail’s details (WatchKit Extension -DetailContoller)
 - Implement AppGroups to store user’s favorites (Not yet Implemented)
 
+Possible Bugs:
+- Location may sometimes update more than once causing the methods that get the user’s location and search for trails to occur more than once
+
 Comments:
 - AppGroups has not yet been implemented
 - As of right now favorites has its own interface controller but once implemented they will be loaded in and shown on TrailsController above the search results
