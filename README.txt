@@ -8,3 +8,9 @@ Weekly Requirements:
 - Display results in table (WatchKit Extension - TrailsController Table Callbacks)
 - Details Controller displaying the selected Trail’s details (WatchKit Extension -DetailContoller)
 - Implement AppGroups to store user’s favorites (Not yet Implemented)
+
+Comments:
+- AppGroups has not yet been implemented
+- As of right now favorites has its own interface controller but once implemented they will be loaded in and shown on TrailsController above the search results
+- Navigation has not yet been implemented
+- HealthKit has not yet been implemented
