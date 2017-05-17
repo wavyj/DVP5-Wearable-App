@@ -22,7 +22,7 @@
 		D0804CC11EC2A92E00B3086C /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0804CBF1EC2A92E00B3086C /* Interface.storyboard */; };
 		D0804CC31EC2A92E00B3086C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0804CC21EC2A92E00B3086C /* Assets.xcassets */; };
 		D0804CCA1EC2A92E00B3086C /* ColemanJustin_WearableProject WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D0804CC91EC2A92E00B3086C /* ColemanJustin_WearableProject WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		D0804CCF1EC2A92E00B3086C /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0804CCE1EC2A92E00B3086C /* InterfaceController.swift */; };
+		D0804CCF1EC2A92E00B3086C /* TrailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0804CCE1EC2A92E00B3086C /* TrailsController.swift */; };
 		D0804CD11EC2A92E00B3086C /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0804CD01EC2A92E00B3086C /* ExtensionDelegate.swift */; };
 		D0804CD31EC2A92E00B3086C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0804CD21EC2A92E00B3086C /* Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -89,7 +89,7 @@
 		D0804CC21EC2A92E00B3086C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0804CC41EC2A92E00B3086C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0804CC91EC2A92E00B3086C /* ColemanJustin_WearableProject WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "ColemanJustin_WearableProject WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D0804CCE1EC2A92E00B3086C /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		D0804CCE1EC2A92E00B3086C /* TrailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailsController.swift; sourceTree = "<group>"; };
 		D0804CD01EC2A92E00B3086C /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		D0804CD21EC2A92E00B3086C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0804CD41EC2A92E00B3086C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -164,7 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				D05BC84C1ECBDF6800C93760 /* ColemanJustin_WearableProject WatchKit Extension.entitlements */,
-				D0804CCE1EC2A92E00B3086C /* InterfaceController.swift */,
+				D0804CCE1EC2A92E00B3086C /* TrailsController.swift */,
 				D07756AF1ECB8F9D0088652A /* DetailController.swift */,
 				D07756B11ECB9CF60088652A /* FavoritesController.swift */,
 				D04791711EC830CB00145C36 /* TrailRowController.swift */,
@@ -348,7 +348,7 @@
 			files = (
 				D0804CD11EC2A92E00B3086C /* ExtensionDelegate.swift in Sources */,
 				D04791701EC8296400145C36 /* Trail.swift in Sources */,
-				D0804CCF1EC2A92E00B3086C /* InterfaceController.swift in Sources */,
+				D0804CCF1EC2A92E00B3086C /* TrailsController.swift in Sources */,
 				D07756B01ECB8F9D0088652A /* DetailController.swift in Sources */,
 				D04791721EC830CB00145C36 /* TrailRowController.swift in Sources */,
 				D07756B21ECB9CF60088652A /* FavoritesController.swift in Sources */,

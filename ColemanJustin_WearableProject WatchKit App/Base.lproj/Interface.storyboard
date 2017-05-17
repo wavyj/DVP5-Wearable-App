@@ -12,7 +12,7 @@
         <!--Trails-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller identifier="home" title="Trails" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="ColemanJustin_WearableProject_WatchKit_App" customModuleProvider="target">
+                <controller identifier="home" title="Trails" id="AgC-eL-Hgc" customClass="TrailsController" customModule="ColemanJustin_WearableProject_WatchKit_Extension">
                     <items>
                         <label alignment="center" hidden="YES" text="Nearby Trails" id="UJe-ES-GaP">
                             <fontDescription key="font" style="UICTFontTextStyleHeadline"/>

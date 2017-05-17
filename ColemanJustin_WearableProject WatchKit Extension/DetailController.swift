@@ -8,6 +8,7 @@
 
 import UIKit
 import WatchKit
+import Foundation
 
 class DetailController: WKInterfaceController {
     
@@ -39,6 +40,15 @@ class DetailController: WKInterfaceController {
             
             distanceLabel.setText("\(miles) mi.")
             
+            //Check if the selected trail is favorited
+            loadFavorite(trail: selectedTrail)
+            
+            if isFave{
+                faveBtn.setBackgroundImageNamed("heart-filled")
+            }else{
+                faveBtn.setBackgroundImageNamed("heart-outline")
+            }
+            
         }
         
         
@@ -56,29 +66,53 @@ class DetailController: WKInterfaceController {
         faveBtn.setEnabled(false)
         
         if (!isFave){
+            
             animate(withDuration: 0.5, animations: {
                 self.faveBtn.setBackgroundImageNamed("heart-filled")
             })
+            saveFavorite(trail: selectedTrail)
             isFave = true
         }else{
             animate(withDuration: 0.5, animations: {
                 self.faveBtn.setBackgroundImageNamed("heart-outline")
             })
+            deleteFavorite(trail: selectedTrail)
             isFave = false
         }
         
-        //Save preference
+    }
+    
+    //MARK: - Methods
+    func deleteFavorite(trail: Trail){
+        let defaults = UserDefaults.init(suiteName: appGroupID)
+        
+        defaults?.removeObject(forKey: trail.name!)
+        defaults?.removeObject(forKey: trail.name! + "latitude")
+        defaults?.removeObject(forKey: trail.name! + "longitude")
+        defaults?.synchronize()
         
         faveBtn.setEnabled(true)
     }
     
-    //MARK: - Methods
-    func deleteFavorite(trail: String){
+    func saveFavorite(trail: Trail){
+        let defaults = UserDefaults.init(suiteName: appGroupID)
         
+        defaults?.set(trail.name!, forKey: trail.name!)
+        defaults?.set(trail.latitude!, forKey: trail.name! + "latitude")
+        defaults?.set(trail.longitude!, forKey: trail.name! + "longitude")
+        defaults?.synchronize()
+        
+        faveBtn.setEnabled(true)
     }
     
-    func saveFavorite(trail: String){
-        if let defaults =
+    func loadFavorite(trail: Trail){
+        let defaults = UserDefaults.init(suiteName: appGroupID)
+        
+        if let _ = defaults?.string(forKey: trail.name!){
+            isFave = true
+        }else{
+            isFave = false
+        }
     }
 
 }

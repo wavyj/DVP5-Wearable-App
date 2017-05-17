@@ -10,7 +10,7 @@ import WatchKit
 import Foundation
 import WatchConnectivity
 
-class InterfaceController: WKInterfaceController, WCSessionDelegate {
+class TrailsController: WKInterfaceController, WCSessionDelegate {
     
     @available(watchOS 2.2, *)
     public func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?){
@@ -132,7 +132,7 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
 
 }
 
-extension InterfaceController: CLLocationManagerDelegate{
+extension TrailsController: CLLocationManagerDelegate{
     
     func getLocation(){
         //CLLocation Setup
